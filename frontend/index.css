@@ -1,0 +1,234 @@
+body {
+  margin-top: 2rem;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1, h3, h4, p {
+  text-align: center;
+  margin: 0.2rem 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0.2rem;
+}
+
+p {
+font-weight: bold;
+}
+
+main {
+  margin: 2rem;
+}
+
+.players-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.player-card {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lose-border {
+  box-shadow: red 0px -10px;
+}
+
+.blackjack-border {
+  box-shadow: gold 0px -10px;
+}
+
+.win-border {
+  box-shadow: green 0px -10px;
+}
+
+.push-border {
+  box-shadow: lightblue 0px -10px;
+}
+
+.double-down-background {
+  background-color: orange;
+  border-color: black;
+}
+
+.grey-background {
+  background-color: lightgray;
+  border-color: black;
+}
+
+.split-text-color {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.button-container {
+  text-align: center; 
+}
+
+#start-btn, #new-game-btn {
+  margin: 2rem auto;
+  display: block;
+}
+
+button, .submit-btn {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.border {
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+}
+
+button:active {
+border-color: #4a4a4a;
+outline: 0;
+}
+
+button:focus {
+border-color: #485fc7;
+outline: 0;
+}
+
+button:hover {
+border-color: #b5b5b5;
+}
+
+button:focus:not(:active) {
+box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+
+button:disabled {
+background-color: lightgray;
+}
+
+.room-selection-container {
+  text-align: center;
+  margin: 1rem;
+}
+
+.room-selection-container h3, 
+.room-selection-container button {
+  margin: 1rem;
+}
+
+.table-container {
+  max-height: 15rem;
+  overflow-y: auto;
+  min-width: 20rem;
+  max-width: 60rem;
+  width: 50%;
+  margin: auto;
+}
+
+.rooms-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  user-select: none;
+}
+
+.rooms-table th, .rooms-table td {
+  padding: 8px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.rooms-table tbody tr { cursor: pointer; }
+.rooms-table th { background-color: #f2f2f2; }
+.rooms-table tbody tr:nth-child(even) { background-color: #f2f2f2; }
+.rooms-table tbody tr:nth-child(odd) { background-color: #eaeaea; }
+.rooms-table .table-row-selected td, #table-row-selected { background-color: #d2d2d2; }
+.rooms-table tbody tr:hover { background-color: #dbdbdb; }
+.rooms-table tbody tr.unavalible { background-color: gray; }
+#table-row-selected { background-color: #d2d2d2; }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  padding: 20px;
+  width: 300px;
+}
+
+.modal-input-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+input {
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+  height: 2rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+  margin: 0; /* Optional, for some versions of Firefox */
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+
+
+
+
+
