@@ -18,13 +18,7 @@ const rootPath = path.join(__dirname, '..');
 app.use(express.static(rootPath + "/frontend"));
 
 let socketToTable = {};
-let tables = {
-  [uuidv4()]: new Table('alpha'),
-  [uuidv4()]: new Table('beta'),
-  [uuidv4()]: new Table('charlie'),
-  [uuidv4()]: new Table('delta'),
-  [uuidv4()]: new Table('epsilon')
-};
+let tables = {};
 
 const validActions = new Set(['hit', 'stay', 'dbl-down', 'split']);
 const DELAY_BETWEEN_ROUNDS = 8000;
