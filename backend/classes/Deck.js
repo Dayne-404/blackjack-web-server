@@ -22,6 +22,9 @@ class Deck {
     }
 
     takeCard() {
+        if(this.top >= this.cards.length)
+            this.shuffle();
+        
         const card = this.cards[this.top];
         this.top++;
         return card;
