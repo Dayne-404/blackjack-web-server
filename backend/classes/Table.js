@@ -73,7 +73,6 @@ class Table {
                     this.dealer.hand.total
                 );
                 
-                console.log('WAHWAHWAH', this.players[id].push[i], push);
                 this.players[id].push[i] = push;
 
                 if(!push) {
@@ -85,7 +84,6 @@ class Table {
                     }
                 }
 
-                console.log('win: ', winCondition);
                 playersWinType[id] = winCondition;
             }
         });

@@ -63,8 +63,6 @@ class Player {
         this.bank -= this.bet[this.handIndex];
         this.bet.push(this.bet[this.handIndex]);
         this.push.push(false);
-
-        console.log('AFTER SPLIT: ', this.bet, this.push);
     }
 
     reset() {
